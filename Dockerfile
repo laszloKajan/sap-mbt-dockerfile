@@ -3,7 +3,7 @@
 FROM node@sha256:5a940b79d5655cc688cfb319bd4d0f18565bc732ae19fab6106daaa72aeb7a63
 MAINTAINER laszlo.kajan@roche.com
 #RUN apk update
-RUN apk add ca-certificates curl git jq zip
+RUN apk add ca-certificates curl git jq make zip
 RUN rm -rf /var/cache/apk/*
 
 RUN curl -o /usr/local/share/ca-certificates/Roche_Root_CA_1_-_G2.crt http://certinfo.roche.com/rootcerts/Roche%20Root%20CA%201%20-%20G2.crt
